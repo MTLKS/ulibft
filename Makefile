@@ -23,8 +23,6 @@ $(OBJ_PATH)/%.o:	$(SRC_PATH)/*/%.c*
 $(OBJ_PATH):
 				mkdir -p $(OBJ_PATH)
 
-bonus:		all
-
 clean:
 			$(RM) $(OBJ_PATH)
 
