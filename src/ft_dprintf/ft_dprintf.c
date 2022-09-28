@@ -6,7 +6,7 @@
 /*   By: maliew <maliew@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 03:03:47 by maliew            #+#    #+#             */
-/*   Updated: 2022/09/29 01:46:27 by maliew           ###   ########.fr       */
+/*   Updated: 2022/09/29 05:04:47 by maliew           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ int	ftdpf_print_args(int fd, va_list args, t_ftdpf_flags *flags)
 
 int	ft_dprintf(int fd, const char *format, ...)
 {
-	va_list	args;
+	va_list			args;
 	t_ftdpf_flags	*flags;
-	int		i;
-	int		count;
+	int				i;
+	int				count;
 
 	i = 0;
 	count = 0;
