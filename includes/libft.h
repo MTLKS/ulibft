@@ -6,7 +6,7 @@
 /*   By: maliew <maliew@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 20:04:12 by maliew            #+#    #+#             */
-/*   Updated: 2022/07/27 19:49:25 by maliew           ###   ########.fr       */
+/*   Updated: 2022/09/29 01:42:15 by maliew           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include "ft_printf.h"
+# include "ft_dprintf.h"
 # include "get_next_line.h"
 
 # include <unistd.h>
