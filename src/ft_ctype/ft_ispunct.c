@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_ispunct.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maliew <maliew@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/09 03:45:42 by maliew            #+#    #+#             */
-/*   Updated: 2022/07/09 03:45:45 by maliew           ###   ########.fr       */
+/*   Created: 2022/09/29 02:21:23 by maliew            #+#    #+#             */
+/*   Updated: 2022/09/29 02:22:41 by maliew           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_ctype.h"
 
-int	ft_toupper(int c)
+int	ft_ispunct(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	return (ft_isgraph(c) && !ft_isalnum(c));
 }

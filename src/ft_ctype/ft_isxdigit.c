@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_isxdigit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maliew <maliew@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/09 03:44:28 by maliew            #+#    #+#             */
-/*   Updated: 2022/07/09 03:45:39 by maliew           ###   ########.fr       */
+/*   Created: 2022/09/29 02:27:04 by maliew            #+#    #+#             */
+/*   Updated: 2022/09/29 02:28:23 by maliew           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_ctype.h"
 
-int	ft_tolower(int c)
+int	ft_isxdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	return (
+		ft_isdigit(c)
+		|| (c >= 'A' && c <= 'F')
+		|| (c >= 'a' && c <= 'f')
+	);
 }

@@ -6,20 +6,21 @@
 /*   By: maliew <maliew@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 20:04:12 by maliew            #+#    #+#             */
-/*   Updated: 2022/09/29 01:42:15 by maliew           ###   ########.fr       */
+/*   Updated: 2022/09/29 02:40:33 by maliew           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "ft_printf.h"
-# include "ft_dprintf.h"
-# include "get_next_line.h"
-
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+
+# include "ft_ctype.h"
+# include "ft_dprintf.h"
+# include "ft_printf.h"
+# include "get_next_line.h"
 
 typedef struct s_list
 {
@@ -27,11 +28,6 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
